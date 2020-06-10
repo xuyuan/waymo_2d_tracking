@@ -1,0 +1,37 @@
+_BASE_: "../Base-RCNN-FPN.yaml"
+MODEL:
+  WEIGHTS: "https://hangzh.s3.amazonaws.com/detectron/mask_cascade_rcnn_ResNeSt_50_FPN_syncBN_1x-c58bd325.pth"
+  MASK_ON: True
+  RESNETS:
+    DEPTH: 50
+    STRIDE_IN_1X1: False
+    RADIX: 2
+    NORM: "FrozenBN"
+  FPN:
+    NORM: "FrozenBN"
+  ROI_HEADS:
+    NAME: CascadeROIHeads
+  ROI_BOX_HEAD:
+    NAME: "FastRCNNConvFCHead"
+    NUM_CONV: 4
+    NUM_FC: 1
+    NORM: "FrozenBN"
+    CLS_AGNOSTIC_BBOX_REG: True
+  ROI_MASK_HEAD:
+    NORM: "FrozenBN"
+  RPN:
+    POST_NMS_TOPK_TRAIN: 2000
+  PIXEL_MEAN: [123.68, 116.779, 103.939]
+  PIXEL_STD: [58.393, 57.12, 57.375]
+SOLVER:
+  IMS_PER_BATCH: 16
+  BASE_LR: 0.02
+INPUT:
+  FORMAT: "RGB"
+TEST:
+  PRECISE_BN:
+    ENABLED: True
+
+
+
+

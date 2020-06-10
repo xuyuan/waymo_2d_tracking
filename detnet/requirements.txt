@@ -1,0 +1,4 @@
+tensorboardX
+pretrainedmodels
+efficientnet-pytorch
+#git+https://github.com/NVIDIA/apex.git@37cdaf4ad57ab4e7dd9ef13dbed7b29aa939d061

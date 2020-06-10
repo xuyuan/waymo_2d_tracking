@@ -1,0 +1,10 @@
+# Ignore git files
+.git
+.gitignore
+.gitlab-ci.yml
+.gitattributes
+.gitmodules
+
+# Ignore generated files
+**/*.pyc
+**/*.ipynb
