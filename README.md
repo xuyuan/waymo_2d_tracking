@@ -3,6 +3,11 @@
 This repo is the 3rd place solution (method name: CascadeRCNN-SORT v2) of [Waymo open dataset challenge 2D tracking track](https://waymo.com/open/challenges/2d-tracking/).
 See our [report](doc/waymo_2d_tracking_dainamite.pdf) for technical details.
 
+<p align="center">
+  <a href="http://www.youtube.com/watch?feature=player_embedded&v=zGmS1zgogHI" target="_blank">
+   <img src="http://img.youtube.com/vi/zGmS1zgogHI/0.jpg" alt="Video" />
+  </a>
+</p>
 
 ## Installation
 Create a conda virtual [environment](environment.yml) and activate it.
