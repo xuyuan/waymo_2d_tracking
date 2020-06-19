@@ -1,6 +1,6 @@
 from pathlib import Path
 import numpy as np
-from detnet.data import COCODetection
+from detnet.data.coco import COCODetection
 from detnet.trainer.data import TransformedDataset
 from detnet.data.metric import evaluate_detections, compute_truth_and_false_positive, voc_ap, f2_score
 from detnet.trainer.transforms.vision import ToBGR
