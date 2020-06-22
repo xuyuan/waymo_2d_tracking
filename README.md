@@ -1,6 +1,6 @@
 # Baseline for 2D Object Detection and Tracking: Cascade R-CNN X152 and SORT
 
-This repo is the 3rd place solution (method name: CascadeRCNN-SORT v2) of [Waymo open dataset challenge 2D tracking track](https://waymo.com/open/challenges/2d-tracking/).
+This repo is the [3rd place](https://sites.google.com/view/cvpr20-scalability/wod-reports) solution (method name: CascadeRCNN-SORT v2) of [Waymo open dataset challenge 2D tracking track](https://waymo.com/open/challenges/2d-tracking/).
 See our [report](doc/waymo_2d_tracking_dainamite.pdf) for technical details.
 
 <p align="center">
